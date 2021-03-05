@@ -3,23 +3,48 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 // creazione ciclo for per ripetere la stampa dei numeri
-for (var i = 1; i <= 100; i++) {
-  // condizioni da rispettare
+// for (var i = 1; i <= 100; i++) {
+//   // condizioni da rispettare
+//   if (i%3 == 0 && i%5 == 0) {
+//     console.log("FizzBuzz");
+//     document.getElementById('numeri').innerHTML +=
+//    "<li>" + "FizzBuzz" + "</li>";
+//   } else if (i%3 == 0){
+//     console.log("Fizz");
+//     document.getElementById('numeri').innerHTML +=
+//    "<li>" + "Fizz" + "</li>";
+//   } else if (i%5 == 0) {
+//     console.log("Buzz");
+//     document.getElementById('numeri').innerHTML +=
+//    "<li>" + "Buzz" + "</li>";
+//   } else {
+//     console.log(i);
+//     document.getElementById('numeri').innerHTML +=
+//    "<li>" + i + "</li>";
+//   }
+// }
+
+
+
+// esercizio fatto con il ciclo while
+var i = 0;
+while (i < 100) {
+  i++;
   if (i%3 == 0 && i%5 == 0) {
-    console.log("FizzBuzz");
-    document.getElementById('numeri').innerHTML +=
-   "<li>" + "FizzBuzz" + "</li>";
-  } else if (i%3 == 0){
-    console.log("Fizz");
-    document.getElementById('numeri').innerHTML +=
-   "<li>" + "Fizz" + "</li>";
-  } else if (i%5 == 0) {
-    console.log("Buzz");
-    document.getElementById('numeri').innerHTML +=
-   "<li>" + "Buzz" + "</li>";
-  } else {
-    console.log(i);
-    document.getElementById('numeri').innerHTML +=
-   "<li>" + i + "</li>";
-  }
+      console.log("FizzBuzz");
+      document.getElementById('numeri').innerHTML +=
+     "<li>" + "FizzBuzz" + "</li>";
+    } else if (i%3 == 0){
+      console.log("Fizz");
+      document.getElementById('numeri').innerHTML +=
+     "<li>" + "Fizz" + "</li>";
+    } else if (i%5 == 0) {
+      console.log("Buzz");
+      document.getElementById('numeri').innerHTML +=
+     "<li>" + "Buzz" + "</li>";
+    } else {
+      console.log(i);
+      document.getElementById('numeri').innerHTML +=
+     "<li>" + i + "</li>";
+    }
 }
